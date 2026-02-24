@@ -6,7 +6,7 @@ Detecting Stabilizing Dynamics in Biased Biodiversity Time Series using Haar Flu
 
 DOI: 10.1098/rspb.2025.2840
 
-Petryshen, W.$^{1}$, Pincelli, HM.$^{1}$, Vasseur, D.$^{2}$
+Petryshen, W. 1, Pincelli, HM. 1, Vasseur, D. 2$
 
 1. Department of Earth and Planetary Sciences, Yale University, New Haven, CT, USA.
 2. Department of Ecology and Evolutionary Biology, Yale University, New Haven, CT, USA.
