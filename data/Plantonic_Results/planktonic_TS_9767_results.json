@@ -1,0 +1,19 @@
+{
+  "seriesID": ["TS_9767"],
+  "unit": ["ma"],
+  "group": ["Planktonic foraminifers"],
+  "db": ["Triton"],
+  "diversity_rt": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  "diversity_sib": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  "age_vector": [0.12, 0.26, 0.39, 0.53, 0.68, 0.94, 1.07, 1.21, 1.36, 1.52, 1.66, 1.85, 2.62],
+  "div_rt_fluctuation": ["NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN"],
+  "ext_fluctuation": ["NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN"],
+  "ori_fluctuation": ["NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN"],
+  "div_sib_fluctuation": ["NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN"],
+  "scales": [0.2083, 0.2233, 0.2393, 0.2565, 0.2749, 0.2946, 0.3158, 0.3384, 0.3627, 0.3888, 0.4167, 0.4466, 0.4786, 0.513, 0.5498, 0.5893, 0.6315, 0.6769, 0.7255, 0.7775, 0.8333, 0.8931, 0.9572, 1.026, 1.0996, 1.1785],
+  "freq": [4.8, 4.4786, 4.1786, 3.8988, 3.6377, 3.3941, 3.1668, 2.9547, 2.7569, 2.5723, 2.4, 2.2393, 2.0893, 1.9494, 1.8189, 1.6971, 1.5834, 1.4774, 1.3784, 1.2861, 1.2, 1.1196, 1.0447, 0.9747, 0.9094, 0.8485],
+  "Age": [0.12, 0.26, 0.39, 0.53, 0.68, 0.94, 1.07, 1.21, 1.36, 1.52, 1.66, 1.85, 2.62],
+  "lat": [-64.3722],
+  "long": [-70.2612],
+  "env": ["Marine"]
+}
