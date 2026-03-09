@@ -11,7 +11,6 @@ library(ggplot2)
 library(zoo)
 library(viridis)
 library(maps)
-library(viridis) 
 library(ncdf4)
 library(jsonlite)
 
