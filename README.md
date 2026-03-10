@@ -11,7 +11,7 @@ Petryshen, W., Pincelli, HM., Vasseur, D. 2026. Detecting Stabilizing Dynamics i
 ## General Information
 
 1. Datasets:
-Each of the listed datasets are used either within the main article or supplementary information. To recreate the figures and analysis run either the analysis or supplemental Jupyter Notebooks. Although each dataset is provided, they can be created by running files in the cluster folder, or the BioDeepTime R scripts.
+Each of the listed datasets are used either within the main article or supplementary information. To recreate the figures and analysis run either the analysis or supplemental Jupyter Notebooks. Although each dataset is provided, they can be created by running files in the cluster folder, or the BioDeepTime R scripts. Note that "allow_pickle=True" when importing .npz files with np.load(file_path, allow_pickle=True).
     - Fig2_Data
     - Fig4_RW_Data
     - Fig4_UNTB_Data
@@ -29,6 +29,16 @@ Each of the listed datasets are used either within the main article or supplemen
 
 4.  DOI for data and code repository:
     - Code Repository: Detecting Stabilizing Dynamics in Biased Biodiversity Time Series using Haar Fluctuation Analysis. 2025. Zenodo. https://doi.org/10.5281/zenodo.18759980
+
+5. General Analysis Overview (Input -> Code -> Output):
+    - Fig2_Data -> Fig2_Analysis.ipynb -> Figure 2
+    - Fig3_Analysis.ipynb -> Figure 3; SFig 5
+    - Fig4_RW_Data, Fig4_UNTB_Data -> Fig4_Analysis.ipynb -> Figure 4, SFig 6 - 8
+    - UNTB_Parameter_Choice.ipynb -> SFig 1 - 4
+    - Exogenous_Factor_Example.ipynb -> SFig 9
+    - Depositional_Model.ipynb -> SFig 10 - 12
+    - Haar_Algorithm_Comparison.ipynb -> SFig 13
+    - Neotome_Results, Plantonic_Results -> BioDeepTime_Analysis.ipynb -> SFig 14 - 19
 
 ## Data and File Overview
 
@@ -60,7 +70,7 @@ Note: Column names for dataframes are included on data import for both the .json
 ### Code 
 
 #### Main Figures and Analysis
-1. Analysis for Figure 2: Haar fluctuation analysis and cross-haar correlations for unbiased neutral and species-level models; all data is produced wihtin notebook
+1. Analysis for Figure 2: Haar fluctuation analysis and cross-haar correlations for unbiased neutral and species-level models; all data is produced wihtin notebook or can be imported from the data folder
     - analysis/Fig2_Analysis.ipynb
 2. Analysis for Figure 3: Haar fluctuation analysis and cross-haar correlations for neutral community after abundance bias; all data is produced within notebook
     - analysis/Fig3_Analysis.ipynb
