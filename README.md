@@ -11,7 +11,7 @@ Petryshen, W., Pincelli, HM., Vasseur, D. 2026. Detecting Stabilizing Dynamics i
 ## General Information
 
 1. Datasets:
-Each of the listed datasets is used either within the main article or supplementary information. To recreate the figures and analysis run the analysis or supplement Jupyter Notebooks.
+Each of the listed datasets are used either within the main article or supplementary information. To recreate the figures and analysis run either the analysis or supplemental Jupyter Notebooks. Although each dataset is provided, they can be created by running files in the cluster folder, or the BioDeepTime R scripts.
     - Fig2_Data
     - Fig4_RW_Data
     - Fig4_UNTB_Data
@@ -42,47 +42,47 @@ Simulations can be re-run using the files listed within the cluster folder. Plea
 ### Data
 If you choose not to rerun each simulation as described above, you can import all of the required data from within the data folder. 
 - Data for Figure 2: 
-    - Fig2_Data/RW: Required .npz files for RW model in figure 2 (imported in Analysis/Fig2_Analysis.ipynb)
-    - Fig2_Data/UNTB: Required .npz files for UNTB model in figure 2 (imported in Analysis/Fig2_Analysis.ipynb)
+    - Fig2_Data/RW: Required .npz files for RW model in figure 2 (imported by Analysis/Fig2_Analysis.ipynb)
+    - Fig2_Data/UNTB: Required .npz files for UNTB model in figure 2 (imported by Analysis/Fig2_Analysis.ipynb)
 - Data for Figure 4:
     - Fig4_UNTB_Data
-        - Fig4_UNTB_Data/UNTB_Dep_Cut: Required .npz files for UNTB models in figure 4 (imported in Analysis/Fig4_Analysis.ipynb)
-        - Ideal_Case_UNTB_Dep_Cut.npz: Required .npz files for the ideal UNTB case in figure 4 (imported in Analysis/Fig4_Analysis.ipynb)
+        - Fig4_UNTB_Data/UNTB_Dep_Cut: Required .npz files for UNTB models in figure 4 (imported by Analysis/Fig4_Analysis.ipynb)
+        - Ideal_Case_UNTB_Dep_Cut.npz: Required .npz files for the ideal UNTB case in figure 4 (imported by Analysis/Fig4_Analysis.ipynb)
     - Fig4_UNTB_Data
-        - Fig4_UNTB_Data/RW_Dep_Cut: Required .npz files for RW models in figure 4 (imported in Analysis/Fig4_Analysis.ipynb)
-        - Ideal_Case_RW_Dep_Cut.npz: Required .npz files for the ideal RW case in figure 4 (imported in Analysis/Fig4_Analysis.ipynb)
+        - Fig4_UNTB_Data/RW_Dep_Cut: Required .npz files for RW models in figure 4 (imported by Analysis/Fig4_Analysis.ipynb)
+        - Ideal_Case_RW_Dep_Cut.npz: Required .npz files for the ideal RW case in figure 4 (imported by Analysis/Fig4_Analysis.ipynb)
 - Data for supplementary empirical analysis (SFig 14 - 19): 
-    - Neotoma_Results: Required .json files for empirical analysis of tree pollen assemblages (imported in supplements/BioDeepTime_Analysis.ipynb)
-    - Plantonic_Results: Required .json files for empirical analysis of planktonic foraminifera assemblages (imported in supplements/BioDeepTime_Analysis.ipynb)
+    - Neotoma_Results: Required .json files for empirical analysis of tree pollen assemblages (imported by supplements/BioDeepTime_Analysis.ipynb)
+    - Plantonic_Results: Required .json files for empirical analysis of planktonic foraminifera assemblages (imported by supplements/BioDeepTime_Analysis.ipynb)
 
 Note: Column names for dataframes are included on data import for both the .json and .npz files. 
 
 ### Code 
 
 #### Main Figures and Analysis
-1. Analysis for Figure 2:
+1. Analysis for Figure 2: Haar fluctuation analysis and cross-haar correlations for unbiased neutral and species-level models; all data is produced wihtin notebook
     - analysis/Fig2_Analysis.ipynb
-2. Analysis for Figure 3:
+2. Analysis for Figure 3: Haar fluctuation analysis and cross-haar correlations for neutral community after abundance bias; all data is produced within notebook
     - analysis/Fig3_Analysis.ipynb
-3. Analysis for Figure 4:
+3. Analysis for Figure 4: Haar fluctuation analysis and cross-haar correlations for neutral and species-level models under depositional bias; data can either be produced from files in the cluster folder, or imported from data folder
     - analysis/Fig4_Analysis.ipynb (depends on code within cluster folder)
 
 #### Supplementary Figures and Analysis
 0. Source code and user defined functions:
     - src 
-1. Analysis for SFig 1 - 4: 
+1. Analysis for SFig 1 - 4: Explore parameter combinations for neutral and species-level models and bias; all required data is produced within notebook
     - supplements/UNTB_Parameter_Choice.ipynb: Interactively create supplementary figures 1 - 4 using this Juypter Notebook; Parameters will need to be changed dependent upon which parameters are to be explored.
-2. Analysis for SFig 5: 
+2. Analysis for SFig 5: Moment convergence of community turnover distributions; contained at the end of the Fig3_Analysis.ipynb; all data is produced wihtin notebook
     - analysis/Fig3_Analysis.ipynb
-3. Analysis for SFig 6 - 8: 
+3. Analysis for SFig 6 - 8: Exploration of community turnover distributions; contained at the end of the Fig4_Analysis.ipynb; data can either be produced from files in the cluster folder, or imported from data folder
     - analysis/Fig4_Analysis.ipynb
-4. Analysis for SFig 9: 
+4. Analysis for SFig 9: Haar fluctuation analysis on a climatically driven community; all data is produced within notebook
     - supplements/Exogenous_Factor_Example.ipynb
-5. Analysis for SFig 10 - 12: 
+5. Analysis for SFig 10 - 12: Comparisons of Pareto distributions, and Sadler plots for the depositional models; all required data is produced within notebook
     - supplements/Depositional_Model.ipynb
-6. Analysis for SFig 13: 
+6. Analysis for SFig 13: Comparions of different Haar fluctuation analysis algorithms; all data is produced within notebook
     - supplements/Haar_Algorithm_Comparison.ipynb
-7. Analysis for SFig 14 - 19: 
+7. Analysis for SFig 14 - 19: Emperical analysis of BioDeepTime data; the original dataset is imported from R via the chronosphere package; processed data also contained in data folder
     - supplements/BioDeepTime_Analysis.ipynb: Plotting of analysis
     - supplements/BioDeepTime_Neotoma.R: Fetching, cleaning, saving data
     - supplements/BioDeepTime_Planktonic_Forams.R: Fetching, cleaning, saving data
@@ -90,7 +90,7 @@ Note: Column names for dataframes are included on data import for both the .json
 
 ## Methodological Information
 
-This repository is organized such that each publication figure can be recreated within individual Juypter notebooks. All analysis can also be reconducted by running files in the cluster folder. All of the functions source code is contained within the src directory. The analysis conducted for Figure 4 was completed on an HPC system. As such, we have included the simulation output files used to construct the final figure within the data folder. Original simulation files for the HPC are included within the "cluster" folder.
+This repository is organized such that each publication figure can be recreated within individual Juypter notebooks. All analysis is also reproducable by running files in the cluster folder. All of the functions source code is contained within the src directory. The analysis conducted for Figure 4 was completed on an HPC system. As such, we have included the simulation output files used to construct the final figure within the data folder. Original simulation files for the HPC are included within the "cluster" folder.
 
 To recreate the figures or analysis in the main article or supplements, simply run each Jupyter Notebook and its dependencies as described above. 
 
